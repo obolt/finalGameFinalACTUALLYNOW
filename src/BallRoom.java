@@ -37,7 +37,7 @@ public class BallRoom extends JPanel {
         label.setFont(new Font("SANS_SERIF", Font.PLAIN, 30));
         add(label);
 
-        timeFor = new JLabel((" - Time left: " + time + "seconds"));
+        timeFor = new JLabel((" - Time: " + time + "seconds"));
         timeFor.setFont(new Font("SANS_SERIF", Font.PLAIN, 30));
         add(timeFor);
 
@@ -101,7 +101,7 @@ public class BallRoom extends JPanel {
                 timeFor.setForeground(Color.black);
         }
 
-        timeFor.setText(" - Time left: " + time + " seconds ");
+        timeFor.setText(" - Time: " + time + " seconds ");
 
         if (isOver()) {
             while (blah) {
